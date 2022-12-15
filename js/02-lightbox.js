@@ -1,14 +1,14 @@
-import { galleryItems } from './gallery-items.js';
+import { galleryItems } from "./gallery-items.js";
 // Change code below this line
 
 const galleryContainerRef = document.querySelector(".gallery");
 const imagesMarkup = createItemsMarkup(galleryItems);
-galleryContainerRef.insertAdjacentHTML('beforeend', imagesMarkup);
+galleryContainerRef.insertAdjacentHTML("beforeend", imagesMarkup);
 
-function createItemsMarkup(item){
-    return galleryItems
-        .map(({ preview, original, description }) => {
-        return `<ul class="gallery">
+function createItemsMarkup(item) {
+  return galleryItems
+    .map(({ preview, original, description }) => {
+      return `<ul class="gallery">
       <li>
       <a class="gallery__item" href="${original}">
         <img
