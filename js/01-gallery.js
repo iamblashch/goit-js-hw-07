@@ -25,7 +25,8 @@ function createItemsMarkup(items) {
 const onContainerClick = (evt) => {
   evt.preventDefault();
 
-  if (evt.target.classList.contains("gallery")) return;
+  if (evt.target.classList.contains("gallery"))
+    return;
   const source = evt.target.dataset.source;
 
   const instance = basicLightbox.create(`
